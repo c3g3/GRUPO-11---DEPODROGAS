@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="HojaCSS/cliestilos.css">
+        <link rel="stylesheet" href="cliestilos.css">
         <title>Formulario Clientes</title>
     </head>
     <body>
@@ -22,11 +22,11 @@
                     <option value="PAS">Pasaporte</option>
                 </select>
                 <label>NÚMERO</label>
-                <input class="controls"  name="NumeroId" pattern="[0-9]{9}" required type="tel" placeholder="XXXXXXXXX" />
+                <input class="controls"  name="NumeroId" required type="tel" placeholder="XXXXXXXXX" />
                 <label>DIRECCIÓN</label>
-                <input class="controls"  name="direccion" type="text" placeholder="Dirección del cliente" />
+                <input class="controls"  name="direccion" required type="text" placeholder="Dirección del cliente" />
                 <label>CELULAR</label>
-                <input class="controls"  name="telefono" pattern="[0-9]{9}" required type="tel" placeholder="XXXXXXXXX" />
+                <input class="controls"  name="telefono" pattern="[0-9]{10}" required type="tel" placeholder="XXXXXXXXX" />
                 <label>E-MAIL:</label>
                 <input class="controls"  name="email" required type="email" placeholder="Escribe tu email" />
                 <label>CIUDAD RESIDENCIA</label>
@@ -45,7 +45,6 @@
                 </datalist>
                 <label>NOMBRE CONTACTO</label>
                 <input class="controls"  maxlength="50" name="Contacto" required size="50" type="text" autofocus placeholder="Nombre del contacto" />
-                <textarea class="controls" cols="46" name="observaciones" rows="3">Puedes escribir aquí tus observaciones...</textarea>
                 <input class="buttons"  type="submit" value="ENVIAR" />
             </form>
         </section>    
