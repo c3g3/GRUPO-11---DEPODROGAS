@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="HojaCSS/cliestilos.css">
+        <link rel="stylesheet" href="formularioproducto.css">
         <title>Formulario Productos</title>
     </head>
     <body>
@@ -12,9 +12,9 @@
             <h5>PRODUCTOS</h5>
             <form action="enviar-formulario" method="post">
                 <label>PRODUCTO</label>
-                <input class="controls"  maxlength="50" name="Nombre" required size="50" type="text" autofocus placeholder="Producto:" />
-                <label form="cars">CODIGO PRODUCTO</label>
-                <select class="selects" name="CODIGO" required>
+                <input class="controls"  maxlength="50" name="Nombre" required size="50" type="text" autofocus placeholder="Nombre Producto:" />
+                <label form="cars">CATEGORIA PRODUCTOS</label>
+                <select class="selects" name="CATEGORIA" required>
                     <option value="NIT">Seleccione ...</option>
                     <option value="ANALG">Analgésicos</option>
                     <option value="ANTIB">Antibióticos</option>
@@ -36,17 +36,19 @@
                     <option value="VTALIB">Venta libre</option> 
                     <option value="VIT">Vitaminas y nutrientes</option>
                 </select>
-                <label>ID CODIGO</label>
-                <input class="controls"  name="IdCod" required type="IdCod" placeholder="ID COD PRODUCTO" />
+                <label>CODIGO</label>
+                <input class="controls"  name="cod" required type="cod" placeholder="COD PRODUCTO" />
                 <label>COD BARRAS</label>
                 <input class="controls"  name="codBarras" required type="[0-15]{20}" placeholder="Código de barras" />
+                <label>UNIDAD DE MEDIDA</label>
+                <input class="controls"  maxlength="20" name="Un med" required size="20" type="text" autofocus placeholder="Unidad de medida:" />
                 <label>REG INVIMA</label>
                 <input class="controls"  name="regInv" pattern="[0-15]{20}" required type="regInv" placeholder="Digite Reg Invima" />
-                <label>LABORATORIO:</label>
-                <input class="controls"  name="lab" required type="text" placeholder="Laboratorio" />            
+                <label>MINIMO:</label>
+                <input class="controls"  name="min" required type="[0-15]{20}" placeholder="min" />            
                 </datalist>
-                <label>NOMBRE CONTACTO</label>
-                <input class="controls"  maxlength="50" name="Contacto" required size="50" type="text" autofocus placeholder="Nombre del contacto" />
+                <label>MAXIMO</label>
+                <input class="controls"  name="max" required type="[0-15]{20}" placeholder="max" /> 
                 <input class="buttons"  type="submit" value="ENVIAR" />
             </form>
         </section>    
