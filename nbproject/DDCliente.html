@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depodrogas</title>
+
+    <link rel="stylesheet" href="../CSS/DDGeneral.css">
+    <link rel="stylesheet" href="../CSS/font.css">
+    <link rel="stylesheet" href="../CSS/RedeS.css">    
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../JS/DDmenu.js"></script>
+</head>
+
+<body class="grid-container">
+    <div class="social-bar">
+        <a href="https://www.facebook.com" class="icon icon-facebook" target="_blank"></a>
+        <a href="https://twitter.com" class="icon icon-twitter" target="_blank"></a>
+        <a href="https://www.gmail.com" class="icon icon-gmail" target="_blank"></a>
+        <a href="https://www.web.whatsapp.com" class="icon icon-whatsapp" target="_blank"></a>    
+        <a href="https://www.github.com" class="icon icon-github" target="_blank"></a>
+    </div>    
+    <header class="header"></header>
+    <section class="barra">
+        <nav class="nav">
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="DDLogin.html" class="nav-menu-link nav-link nav-menu-link_active">Inicio</a>
+                </li>            
+                <li class="nav-menu-item">
+                    <a href="DDCliente.html" class="nav-menu-link nav-link">Clientes</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="DDProveedor.html" class="nav-menu-link nav-link">Proveedores</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="DDProducto.html" class="nav-menu-link nav-link">Productos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="DDMovimientos.html" class="nav-menu-link nav-link">Movimientos</a>
+                </li>           
+            <li class="nav-menu-item">
+                <a href="#" class="nav-menu-link nav-link">Reportes</a>
+            </li>
+            </ul>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </section>
+    <article class="main_per">
+        <section class="forms">
+            <h5>CLIENTES</h5>
+            <form action="enviar-formulario" method="post">
+                <label>CLIENTE</label>
+                <input class="controls"  maxlength="50" name="Nombre" required size="50" type="text" autofocus placeholder="Nombre del cliente" />
+                <label form="cars">TIPO DE DOCUMENTO</label>
+                <select class="selects_per" name="TIPO DE ID" required>
+                    <option value="NIT">Seleccione ...</option>
+                    <option value="NIT">NIT</option>
+                    <option value="CC">Cédula Ciudadanía</option>
+                    <option value="CE">Cédula Extranjería</option>
+                    <option value="PAS">Pasaporte</option>
+                </select>
+                <label>NÚMERO</label>
+                <input class="controls"  name="NumeroId" required type="tel" placeholder="XXXXXXXXX" />
+                <label>DIRECCIÓN</label>
+                <input class="controls"  name="direccion" required type="text" placeholder="Dirección del cliente" />
+                <label>CELULAR</label>
+                <input class="controls"  name="telefono" pattern="[0-9]{10}" required type="tel" placeholder="XXXXXXXXX" />
+                <label>E-MAIL:</label>
+                <input class="controls"  name="email" required type="email" placeholder="Escriba el email" />
+                <label>CIUDAD RESIDENCIA</label>
+                <input class="controls"  list="ciudad" type="text" />
+                <datalist id="ciudad">
+                    <option value="Bogotá"></option>
+                    <option value="Cali"></option>
+                    <option value="Medellín"></option>
+                    <option value="Barranquilla"></option>
+                    <option value="Bucaramanga"></option>
+                    <option value="Cartagena"></option>
+                    <option value="Santa Marta"></option>
+                    <option value="Cúcuta"></option>
+                    <option value="Armenia"></option>
+                    <option value="Pereira"></option>
+                </datalist>
+                <label>NOMBRE CONTACTO</label>
+                <input class="controls"  maxlength="50" name="Contacto" required size="50" type="text" autofocus placeholder="Nombre del contacto" />
+                <input class="buttons"  type="submit" value="ENVIAR" />
+            </form>
+        </section>
+    </article>
+    <footer class="footer">
+        <h3>DEPODROGAS. Su distribuidor de confianza</h3>
+    </footer>
+</body>
+</html>

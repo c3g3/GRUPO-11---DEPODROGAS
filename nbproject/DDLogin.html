@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depodrogas</title>
+
+    <link rel="stylesheet" href="../CSS/DDGeneral.css">
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../JS/DDmenu.js"></script>
+</head>
+
+<body class="grid-container"></body>
+    <header class="header"></header>
+    <section class="barra">
+        <nav class="nav">
+            <ul class="nav-menu">
+            <li class="nav-menu-item">
+                <a href="DDLogin.html" class="nav-menu-link nav-link nav-menu-link_active">Inicio</a>
+            </li>            
+            <li class="nav-menu-item">
+                <a href="DDCliente.html" class="nav-menu-link nav-link">Clientes</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="DDProveedor.html" class="nav-menu-link nav-link">Proveedores</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="DDProducto.html" class="nav-menu-link nav-link">Productos</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="DDMovimientos.html" class="nav-menu-link nav-link">Movimientos</a>
+            </li>          
+            <li class="nav-menu-item">
+                <a href="#" class="nav-menu-link nav-link">Reportes</a>
+            </li>
+            </ul>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </section>
+    <article class="main_login">
+        <section class="forms_login">
+            <h5>Inicio de sesión</h5>
+            <form action="enviar-formulario" method="post">
+                <input class="controls" type="text" name="usuario" value="" placeholder="&#128272; Usuario">
+                <input class="controls" type="password" name="contrasena" value="" placeholder="&#128272; Contraseña">
+                <a href="Inicio.html"> <input class="buttons" type="submit" name="" value="Ingresar"></a>
+                <p><a href="#">¿Olvidaste tu Contraseña?</a></p>
+            </form>
+        </section>
+    </article>
+    <footer class="footer">
+        <h3>DEPODROGAS. Su distribuidor de confianza</h3>
+    </footer>
+</body>
+</html>
